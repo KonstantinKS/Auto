@@ -1,0 +1,46 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+html, body, .wrapper { min-height: 100%; height: 100%; }
+.wrapper { position: relative; padding-bottom: 50px; }
+header { top: 0px; text-align: center; }
+footer { text-align: center; position: absolute; bottom:0; width: 100%; }
+
+/*-------------------------
+	The Notice
+--------------------------*/
+
+section.notice { min-height: 100%; padding-bottom: 170px; }
+#notice { width: 100%; height: 120px; position: absolute; bottom: 0; }
+#notice p.text { font-size: 10px; }
+#notice p.counter { font-size: 9px; }
+#notice p.date { font-size: 8px; }
+
+/*-------------------------
+	The Login Form
+--------------------------*/
+
+
+
+
+
+/*-------------------------
+	The protected page
+--------------------------*/
+
+
+
+
+/*----------------------------
+	The Demo Footer
+-----------------------------*/
+
+
