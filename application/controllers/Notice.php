@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Notice extends CI_Controller {	
+class Notice extends MX_Controller {	
 	
 	private $template = '/templates/notice/';
 		
@@ -18,6 +18,18 @@ class Notice extends CI_Controller {
 		$this->load->view( $this->template . 'header', $data );
 		$this->load->view( 'notice/index', $data );
 		$this->load->view( $this->template . 'footer', $data );
+	}
+	
+	public function notice_counter()
+	{
+		$data['slug'] = trim(strip_tags($_POST['slug']));		
+		$check_notice = $this->model->check_notice($data);		
+		if ($check_notice) {			
+            $counter = $this->model->notification_counter($data);
+			echo $counter;		
+        } else {
+           	echo 'notice_denied';
+        }		
 	}
 	
 }

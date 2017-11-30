@@ -19,6 +19,9 @@
   	<div class="wrapper container-fluid">
     
     	<header>
+        	<div class="login col-xs-3" id="account">        	
+        		<?php echo Modules::run('Login/Login/userLogin'); ?>
+            </div>
         	<h1><?php echo $title; ?></h1>
         </header>
     
